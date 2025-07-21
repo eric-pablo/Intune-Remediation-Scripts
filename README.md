@@ -61,7 +61,8 @@ C:\ProgramData\Microsoft\IntuneManagementExtension\Logs\.
 # Example: Registry Value Remediation
 
 **Detection Script** (Detect-Registry.ps1)
-PowerShell:
+
+PowerShell
 ```
 $Path = "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Power"
 $Name = "HiberbootEnabled"
@@ -87,6 +88,7 @@ try {
 ```
 
 **Remediation Script** (Remediate-Registry.ps1)
+
 PowerShell
 ```
 $Path = "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Power"
