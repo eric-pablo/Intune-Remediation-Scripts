@@ -15,12 +15,13 @@ Each remediation comprises two PowerShell scripts:
 - Detection Script: Checks if the device is compliant. Exit code 0 for compliance; exit code 1 to trigger remediation.
 - Remediation Script: Runs only if the detection script finds an issue (exit code 1). Implements corrective actions, such as starting services, modifying registry values, or deleting unwanted files. Should exit with 0 after remediation.
 
-Example directory layout
-
+Example directory layout:
+```
 Remediations/
   └── ServiceCheck/
       ├── Detect-Service.ps1
       └── Remediate-Service.ps1
+```
       
 How Remediation Scripts Work
 Component - Description
